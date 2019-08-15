@@ -12,12 +12,18 @@ import {
 
 export default class SymbolCompletionProvider
   implements CompletionItemProvider {
+  private enabled: boolean = false;
+
   constructor(private minLength: number) {}
 
   public async provideCompletionItems(
     document: TextDocument,
     position: Position
   ) {
+    if (!this.enabled) {
+      return null;
+    }
+
     const linePrefix = document
       .lineAt(position)
       .text.substr(0, position.character);
@@ -32,6 +38,14 @@ export default class SymbolCompletionProvider
     }
 
     return await this.buildCompletinItems(query);
+  }
+
+  public enable() {
+    this.enabled = true;
+  }
+
+  public disable() {
+    this.enabled = false;
   }
 
   private async buildCompletinItems(query: string): Promise<CompletionItem[]> {

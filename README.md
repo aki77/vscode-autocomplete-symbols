@@ -12,3 +12,25 @@ This extension contributes the following settings:
 
 - `autocompleteSymbols.minLength`: `4`
 - `autocompleteSymbols.enabledLanguages`: `[]`
+- `autocompleteSymbols.includeAutomatically`: `true`
+
+## Keymaps
+
+No keymap by default.
+
+### example
+
+```json
+[
+  {
+    "key": "ctrl+'",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "autocompleteSymbols.triggerSuggest",
+    "when": "editorTextFocus"
+  }
+]
+```
