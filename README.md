@@ -4,7 +4,7 @@ Completion provider for symbols.
 
 ## Features
 
-screenshots
+![demo](https://i.gyazo.com/00686ea818174759942737138d345c6a.gif)
 
 ## Extension Settings
 
