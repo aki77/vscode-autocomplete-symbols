@@ -2,7 +2,7 @@
   "name": "autocomplete-symbols",
   "displayName": "Autocomplete Symbols",
   "description": "Completion provider for symbols",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "aki77",
   "engines": {
     "vscode": "^1.37.0"
