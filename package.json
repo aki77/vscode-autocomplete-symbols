@@ -4,6 +4,7 @@
   "description": "Completion provider for symbols",
   "version": "0.2.0",
   "publisher": "aki77",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.37.0"
   },
