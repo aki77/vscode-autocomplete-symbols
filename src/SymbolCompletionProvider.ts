@@ -37,7 +37,7 @@ export default class SymbolCompletionProvider
       return null;
     }
 
-    return await this.buildCompletinItems(query);
+    return await this.buildCompletionItems(query);
   }
 
   public enable() {
@@ -48,7 +48,7 @@ export default class SymbolCompletionProvider
     this.enabled = false;
   }
 
-  private async buildCompletinItems(query: string): Promise<CompletionItem[]> {
+  private async buildCompletionItems(query: string): Promise<CompletionItem[]> {
     const symbols = (await commands.executeCommand(
       "vscode.executeWorkspaceSymbolProvider",
       query
