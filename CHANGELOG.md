@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.2.3
+## 0.2.5
 
 - Update dependencies
 - Fix typo
