@@ -2,7 +2,7 @@
   "name": "autocomplete-symbols",
   "displayName": "Autocomplete Symbols",
   "description": "Completion provider for symbols",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "publisher": "aki77",
   "icon": "images/icon.png",
   "engines": {
